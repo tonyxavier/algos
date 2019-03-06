@@ -1,6 +1,6 @@
 package com.algos.ds.lists;
 
-public class LinkedList
+public class LinkedList<T>
 {
 
 private Node head=null;
@@ -12,7 +12,7 @@ private int size=0;
 private class Node
 {
 	
-	private int data;
+	private T data;
 	
 	private Node next;
 	
@@ -29,7 +29,7 @@ private class Node
 }
 	
 
-public void addToEnd(Object data)
+public void addToEnd(<T> data)
 {
 	if(head==null)
 	{
@@ -40,7 +40,7 @@ public void addToEnd(Object data)
 }
 
 
-public void insert(int i,Object data)  //insert at a new node as ith element
+public void insert(int i,<T> data)  //insert at a new node as ith element
 {
 	
 	
@@ -49,14 +49,14 @@ public void insert(int i,Object data)  //insert at a new node as ith element
 
 
 
-public Object get(int i)
+public <T> get(int i)
 {
 	
-	return new Object();
+	return new <T>();
 }
 
 
-public boolean remove(int data)
+public boolean remove(<T> data)
 {
 		
 	if(head==null)
@@ -92,7 +92,7 @@ public boolean remove(int data)
 }
 
 
-public void add(int data) //insert an element at the beginning of the linked list
+public void add(<T> data) //insert an element at the beginning of the linked list
 {
 	
 	if(head==null)
